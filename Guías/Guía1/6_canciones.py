@@ -66,3 +66,33 @@ class Playlist:
             return "\n".join(líneas) # Combina el salto de línea
 
 # Instanciar Clases (creación de objetos)
+# Crear canciones
+canción_1 = Canción("Billie Jean", "Michael Jackson", 296)
+canción_2 = Canción("Free Bird", "Lynyrd Skynrd", 551)
+canción_3 = Canción("Green River", "Creedence Clearwater Revival", 157)
+canción_4 = Canción("Girls Just Want to Have Fun", "Cyndi Lauper", 239)
+canción_5 = Canción("Live Is Life", "Opus", 245)
+
+# Crear playlists
+pop = Playlist("Pop")
+rock = Playlist("Rock")
+
+# Añadir canciones
+pop.agregar(canción_1)
+rock.agregar(canción_2)
+rock.agregar(canción_3)
+pop.agregar(canción_4)
+rock.agregar(canción_5)
+
+# Mostrar las playlists
+print(pop)
+print()
+print(rock)
+print()
+
+# Combinar las playlists
+playlist_total = pop + rock
+
+# Mostrar la playlist combinada
+print(playlist_total)
+print(f"\nNúmero total de canciones: {len(playlist_total)}")
