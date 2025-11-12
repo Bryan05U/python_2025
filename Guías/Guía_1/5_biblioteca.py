@@ -5,7 +5,6 @@ class Libro:
         self.año_publicación = año_publicación
         self.cantidad = cantidad
     
-
 class Bibloteca:
     def __init__(self):
         self.libros = {}
