@@ -1,10 +1,10 @@
 class Pato:
     def graznar(self):
-        print("Quack!")
+        print("Pato: Quack!")
 
 class Persona:
-    def granzar(self):
-        print("Estoy imitando a un pato")
+    def graznar(self):
+        print("Persona: Estoy imitando a un pato")
 
 def graznido(ser):
     ser.graznar()
