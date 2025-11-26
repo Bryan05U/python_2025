@@ -12,7 +12,6 @@ class Coche(Terrestre):
     def moverse(self):
         self.rodar()
 
-
 # Clase de Vehículo Acuático
 class Acuático(Vehículo):
     def navegar(self):
